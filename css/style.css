@@ -1,0 +1,298 @@
+/* debut header (Cette partei de code  est pour tout les pages)*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@100;200;300;500;600;700&family=Lemon&family=Noto+Sans:wght@300;400;500;600;700;800&family=Pacifico&family=Quicksand:wght@300;400;500;600;700&family=Rubik+Bubbles&family=Satisfy&family=Sevillana&family=Single+Day&display=swap');
+header > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #093454;
+}
+header img{
+    width: 100px;
+    height: 100px;
+}
+header nav{
+    align-items: center;
+}
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+header nav ul a{
+    text-decoration: none;
+    margin-right: 20PX;
+    color: white;
+}
+header nav a:hover{
+    border-bottom:#faae4c 2PX solid;
+    color: #faae4c;
+}
+@media screen and (max-width:600PX) {
+    header div{
+        flex-direction: column;
+        align-items: flex-start;
+        height: 40%;
+    }
+    header nav ul{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    header > div + div div{
+        margin-top: 60%;
+
+    }
+}
+/* fin header */
+article > h1{
+    margin: 20px 0;
+    margin-bottom: 20PX;
+    color: #088ccf;
+}
+/* img debut  (Cette partei de code  est pour : index.html)*/
+.nav > div {
+    background: url(../img/about.png) no-repeat center/cover;
+    height: 80vb;
+    width: 100%;
+    padding-bottom: 200px;
+    position: relative;
+    text-align: center;
+}
+.nav > div div{
+    margin-top: 150px;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+.nav div h1{
+    color: #faae4c;
+    text-align: center;
+    animation: b 2s ease-in-out;
+}
+.nav > div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.nav p{
+    color:white;
+    animation: r 4s ease-in-out;
+}
+.nav a{
+    border: #faae4c; 
+    background-color: #faae4c;
+}
+.nav a:hover{
+    background-color: #774e18;
+}
+.nav a{
+    display: inline-block;
+    animation: anin 4s ;
+}
+@keyframes r {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+@keyframes anin {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes b {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+/* img fin */
+/* debut services ( Cette partei de code  est pour : index.html et Services.html)*/
+#Services{
+    text-align: center;
+    margin-bottom: 40px;
+}
+#Services div div div{
+    border: black 2px solid;
+    max-width: 400px;
+    min-height: 100px;
+}
+#Services img{
+    width: 40PX;
+    height: 40PX;
+}
+/* fin services */
+/* destinations debut ( Cette partei de code  est pour : index.html et destinations.html)*/
+#destinations{
+    text-align: center;
+    margin-bottom: 40px;
+    color: #088ccf;  
+}
+#destinations img{
+    width: 100%;   
+    height: 70%;   
+}
+#destinations h1 + div > div {
+    text-align: center;
+    max-width: 300PX;
+    max-height: 300PX;
+}
+#destinations img + div {
+    background-color: #fee4c9;
+    color: #088ccf;
+    height: 30%;
+}
+#destinations img + div a:hover{
+    color: #135272;
+}
+/* destinations fin */
+
+/* Offres debut (Cette partei de code est pour : index.html et Offres.html )*/
+
+#Offres{
+    text-align: center;
+}
+ #Offres >div >div{
+    text-align: center;
+    position: relative;
+}
+ #Offres >div >div > div{
+    position: absolute;
+    z-index: 2;
+    bottom: 0px;
+    left:19px;
+    width: 90%;
+    text-align: center;
+    color: white;
+}  
+#Offres >div >div div div{
+    width: 100%;
+}
+#Offres >div >div >div{
+    position: relative;
+} 
+#Offres img{
+    width: 100%;   
+    height: 100%;
+}
+#Offres >div >div{
+    position: relative;
+    text-align: center;
+    mIN-width: 400PX;
+    max-height: 300PX;
+}
+#Offres >div >div img {
+    width: 100%;
+    height: auto;
+    display: block;
+    z-index: 1;
+    position: relative;
+}
+#Offres >div >div img + div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 5vw;
+    box-sizing: border-box;
+    z-index: -1;
+}
+#Offres >div >div img:hover{
+    z-index: -1;
+}
+/* Offres fin */
+
+/* about debut (Cette partei de code  est pour : index.html et about.html)*/
+    /* page index.html */
+#about{
+    text-align: center;
+}
+ #about p{
+    max-width: 400px;
+} 
+#about img{
+    width: 50%;
+}
+@media screen and (max-width:575PX){
+    #about img{
+        order: 1;
+    }
+    #about p{
+        order: 2;
+    }
+}
+    /* page about.html */
+#auteur >div > h1{
+   text-align: center;
+   color: #088ccf;
+}
+#auteur h2{
+    color: #774e18;
+}
+#auteur > div{
+    background-color: #f7f7f7;
+    border-radius: 20px;
+}
+/* about fin */
+/* photo debut (Cette partei de code  est pour : index.html)*/
+#photo img{
+    max-width: 400px;
+    max-height: 400px;
+}
+#photo div div{
+    margin: 0;
+}
+#photo{
+    text-align: center;
+}
+/* photo fin*/
+/* debut footer (Cette partei de code  est pour tout les pages)*/
+footer{
+    background-color: #093454;
+    color: #fee4c9;
+    text-align: center;
+}
+footer .z{
+    text-align: center;
+}
+footer ul{
+    list-style-type: none;
+}
+footer .z input[type=submit]{
+    margin: 30px;
+}
+footer .media{
+    color: #f7f7f7;
+}
+footer .media :hover{
+    color:#4343ce;
+}
+footer .media + a:hover{
+     color:blue;
+}
+footer .media + a +a:hover{
+   color: rgb(216, 50, 128);
+}
+/* footer fin */
